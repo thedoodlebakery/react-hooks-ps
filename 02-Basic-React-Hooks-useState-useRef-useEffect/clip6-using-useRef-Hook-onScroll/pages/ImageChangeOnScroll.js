@@ -1,13 +1,13 @@
-import React from 'react';
-import ImageToggleOnScroll from '../src/ImageToggleOnScroll';
+import React from "react";
+import ImageChangeOnScroll from "../src/ImageChangeOnScroll";
 
-const ImageChangeOnScroll = () => {
+const ImageToggleOnScroll = () => {
   return (
     <div>
       {[1124, 187, 823, 1269, 1530].map((speakerId) => {
         return (
           <div key={speakerId}>
-            <ImageToggleOnScroll
+            <ImageChangeOnScroll
               primaryImg={`/static/speakers/bw/Speaker-${speakerId}.jpg`}
               secondaryImg={`/static/speakers/Speaker-${speakerId}.jpg`}
               alt=""
@@ -19,4 +19,4 @@ const ImageChangeOnScroll = () => {
   );
 };
 
-export default ImageChangeOnScroll;
+export default ImageToggleOnScroll;
