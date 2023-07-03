@@ -4,7 +4,7 @@ const InputElement = () => {
   const [inputText, setInputText] = useState("");
   const [historyList, setHistoryList] = useState([]);
   const random_boolean = Math.random() >= 0.5;
-  //const [ isLoading, setIsLoading ] = useState(true);
+  const [ isLoading, setIsLoading ] = useState(random_boolean === true);
 
   // cannot call a hook from the inside of a conditional
   // if (random_boolean === true){
